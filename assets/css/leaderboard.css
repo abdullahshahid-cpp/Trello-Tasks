@@ -1,0 +1,204 @@
+* {
+    padding: 0px;
+    margin: 0;
+}
+
+body {
+    background: url("../img/leaderboard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+p {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+table {
+    font-family: "Montserrat", sans-serif;
+    border-collapse: collapse;
+    color: #FFFFFF;
+    border: 1px solid white;
+    width: 100%;
+}
+  
+td, th {
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #FFFFFF;
+    text-align: left;
+    border: 0px;
+    padding: 3px 8px;
+    font-weight: normal;
+}
+
+th {
+    border-bottom: 1px solid white;
+    background-color: #0A1821;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #2d4955;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #12394D;
+    border: 1px solid #375764;
+    border-radius: 30px;
+    padding: 8px 20px;
+}
+
+.nav_button p{
+    margin: 0;
+}
+
+.nav_icon {
+    width: 15px;
+    height: 16px;
+    margin-right: 3px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(17, 52, 70, .9);
+    border: 1px solid #35515d;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.board-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+}
+
+#game_name {
+    font-weight: lighter;
+    font-size: 34px;
+    font-family: "Montserrat", sans-serif;
+    align-items: left;
+    width: 100%;
+}
+
+.return-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background-image: linear-gradient(#F80705, #7B1E1D);
+    font-size: 15px;
+    border: 0px;
+    border-radius: 100px;
+    width: 386px;
+    height: 58px;
+
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 63%;
+    padding: 15px 0px;
+}
+
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    table {
+        font-size:small;
+    }
+
+    .nav_button {
+        font-size: 10px;
+    }
+
+    .main-container {
+        gap:20px;
+    }
+
+    .return-menu {
+        width: 180px;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    #presents{
+        font-size: 20px;
+    }
+    #game_name {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 570px) {
+    table {
+        font-size: x-small;
+    }
+
+    .return-menu {
+        width: 160px;
+        height: 40px;
+        font-size: 9px;
+    }
+
+    #game_name {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    table {
+        font-size: 5px;
+    }
+
+    .return-menu {
+        width: 130px;
+        height: 20px;
+        font-size: 6px;
+    }
+
+    #game_name {
+        font-size: 15px;
+    }
+}
