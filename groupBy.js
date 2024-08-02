@@ -1,5 +1,8 @@
 function groupBy(arr, key)
 {
+    if(arr.length === 0)
+        return {}
+
     objKeys = Object.keys(arr[0])
     
     if(!objKeys.includes(key))
@@ -18,6 +21,8 @@ function groupBy(arr, key)
         else
         {
             result[keyToAdd] = [];
+            result[keyToAdd].push(arr[i]);
+            i++;
         }
     }
     return result
@@ -36,4 +41,5 @@ const array= [
 console.log('group by city:\n\n', groupBy(array, 'city'))
 console.log('\ngroup by id:\n\n', groupBy(array, 'id'))
 console.log('\ngroup by name:\n\n', groupBy(array, 'name'))
-console.log('\n invalid key check:\n\n', groupBy(array, 'gender'))
+console.log('\ninvalid key check:\n', groupBy(array, 'gender'))
+console.log('\nempty array:\n', groupBy([], 'city'))
